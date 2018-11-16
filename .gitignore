@@ -8,5 +8,5 @@
 !.gitignore
 !PrepareOs
 !Readme.md
-!assets
+!.assets
 !.zshrc
