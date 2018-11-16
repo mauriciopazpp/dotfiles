@@ -1,6 +1,6 @@
 # Ignore everything
 /*
-.post_install.sh.swp
+/Projects/*
 
 # But not these files...
 !*.vimrc
@@ -10,3 +10,4 @@
 !Readme.md
 !.assets
 !.zshrc
+!Projects/.gitkeep
