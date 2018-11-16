@@ -1,4 +1,5 @@
 <img src='https://github.com/mauriciopazpp/dotfiles/blob/master/.assets/dotfiles.png?raw=true'/>
+by mauriciopazpp
 
 This is my repo to prepare my OS after a clearly instal of Linux distro.
 Feel fine to use and.
