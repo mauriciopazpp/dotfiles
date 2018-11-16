@@ -10,14 +10,15 @@ antigen bundle command-not-found
 antigen bundle soimort/translate-shell
 antigen bundle zsh-users/zsh-syntax-highlighting
 
-sudo apt-get install fonts-powerline
+if [ $(dpkg-query -W -f='${Status}' fonts-powerline 2>/dev/null | grep -c "ok installed") -eq 0 ];
+then
+  sudo apt-get install fonts-powerline
+fi
+
 antigen theme agnoster
 
 antigen apply
 
-echo "Antigen done!"
+SAVEHIST=100
+HISTFILE=~/.zsh_history
 
-DEFAULT_USER=$USER
-prompt_context(){}
-
-;;
