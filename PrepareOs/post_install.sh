@@ -13,7 +13,7 @@ else
 	options=(1 "Sublime Text 3" off    # any option can be set to default to "on"
 	         2 "LAMP Stack" off
 	         3 "Build Essentials" off
-	         4 "Node.js" off
+	         4 "Node.js npm and yarn" off
 	         5 "Git" off
 	         6 "Composer" off
 	         7 "JDK 8" off
@@ -74,6 +74,14 @@ else
 				echo "Installing Nodejs"
 				curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 				apt install -y nodejs
+
+				echo "Installing npm"
+				apt-get install npm
+
+				echo "Installing yarn"
+				curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+				echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+				sudo apt-get install yarn
 				;;
 
 			5)
