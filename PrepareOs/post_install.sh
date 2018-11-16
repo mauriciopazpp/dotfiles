@@ -28,7 +28,7 @@ else
 	         16 "Arch Theme" off
 	         17 "Arc Icons" off
 	         18 "Numix Icons" off
-		 19 "Zsh" off
+		 19 "Zsh, oh-my-zsh and antigen(to manage zsh)" off
 		 20 "xclip" off)
 	choices=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
 	clear
@@ -190,6 +190,8 @@ else
 				echo "Installing zshel and oh-my-zsh"
 				apt-get install zsh
 				sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+				curl -L git.io/antigen > antigen.zsh
+				source antigen.zsh
 				;;
 
 			20)
