@@ -1,4 +1,6 @@
-<img src='https://github.com/mauriciopazpp/dotfiles/blob/master/assets/dotfiles.png?raw=true'/>
+<img src='https://github.com/mauriciopazpp/dotfiles/blob/master/.assets/dotfiles.png?raw=true'/>
+by mauriciopazpp
+
 
 This is my repo to prepare my OS after a clearly instal of Linux distro.
 Feel fine to use and.
@@ -11,4 +13,5 @@ Feel fine to use and.
 	- To see the scritp before run, <a href='https://github.com/mauriciopazpp/dotfiles/blob/master/.zshrc'> click here </a>
 	- Your terminal will look this way
 	
-	<img src='https://github.com/mauriciopazpp/dotfiles/blob/master/assets/after_install_zsh.png?raw=true'/>
+	<img src='https://github.com/mauriciopazpp/dotfiles/blob/master/.assets/after_install_zsh.png?raw=true'/>
+	<img src='https://github.com/mauriciopazpp/dotfiles/blob/master/.assets/autocompletion.gif?raw=true'/>
