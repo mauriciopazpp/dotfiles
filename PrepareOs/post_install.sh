@@ -29,7 +29,8 @@ else
 	         17 "Arc Icons" off
 	         18 "Numix Icons" off
 		 19 "Zsh (need git installed)" off
-		 20 "xclip" off)
+		 20 "xclip" off
+		 21 "Notifications comand completion (undistract-me)" on)
 	choices=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
 	clear
 	for choice in $choices
@@ -215,6 +216,11 @@ else
 				#xclip
 				echo "Installing xclip"
 				apt-get install xclip
+				;;
+			21) 
+				#undistract-me
+				echo "Installing undistract-me"
+				apt-get install undistract-me
 				;;
 
 
