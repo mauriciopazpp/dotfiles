@@ -10,8 +10,14 @@ antigen bundle command-not-found
 antigen bundle soimort/translate-shell
 antigen bundle zsh-users/zsh-syntax-highlighting
 
-antigen theme robbyrussell
+sudo apt-get install fonts-powerline
+antigen theme agnoster
 
 antigen apply
 
 echo "Antigen done!"
+
+DEFAULT_USER=$USER
+prompt_context(){}
+
+;;
