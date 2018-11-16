@@ -1,5 +1,6 @@
 # Ignore everything
 /*
+.post_install.sh.swp
 
 # But not these files...
 !*.vimrc
