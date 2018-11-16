@@ -17,11 +17,11 @@ then
   sudo apt-get install fonts-powerline
 fi
 
-if [ ! $(dpkg-query -W -f='${Status}' undistract-me 2>/dev/null | grep -c "ok installed") -eq 0 ];
-then
-	. /usr/share/undistract-me/long-running.bash
-	notify_when_long_running_commands_finish_install
-fi
+#if [ ! $(dpkg-query -W -f='${Status}' undistract-me 2>/dev/null | grep -c "ok installed") -eq 0 ];
+#then
+#	. /usr/share/undistract-me/long-running.bash
+#	notify_when_long_running_commands_finish_install
+#fi
 
 
 antigen theme clean
