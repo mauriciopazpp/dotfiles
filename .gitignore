@@ -3,7 +3,6 @@
 
 # But not these files...
 !*.vimrc
-!*.vim
 !.gitignore
 !PrepareOs
 !Readme.md
