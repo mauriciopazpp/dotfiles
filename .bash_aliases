@@ -17,9 +17,6 @@ alias path='echo -e ${PATH//:/\\n}' #Show all the paths configurated
 alias ports='netstat -tulanp' #Show the ports used. Hint: use grep 80 to filter ports
 alias meminfo='free -m -l -t'
 
-#Amazing aliases
-alias restart-roteador="sudo ssh admin@192.168.2.1 /sbin/reboot"
-
 ##Developtment
 #Apache
 alias restart-apache='sudo service apache2 restart' #Restart apache
