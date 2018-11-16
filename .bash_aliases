@@ -20,4 +20,11 @@ alias meminfo='free -m -l -t'
 ##Developtment
 #Apache
 alias restart-apache='sudo service apache2 restart' #Restart apache
+alias switch-php='sudo update-alternatives --config php && echo "\n\n" && php -v'
+alias dev='mkdir -p ~/Projects && cd Projects'
+
+##Settings
+alias my-alias='vim ~/.bash_aliases'
+alias sources='source ./.bash_aliases && source .zshrc source .profile && echo "bash_aliases, zshrc and profile loaded!"'
+
 
