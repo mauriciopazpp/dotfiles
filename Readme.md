@@ -3,7 +3,7 @@
 This is my repo to prepare my OS after a clearly instal of Linux distro.
 Feel fine to use and.
 
-1) PrepareOS folder:
+1) Run `sudo PrepareOs/post_install.sh && sudo apt-get upgrade`:
 	- The first script then i run. This script, will update and upgrade OS, and show a list of softwares to select and install.
 	- To see the script, <a href='https://github.com/mauriciopazpp/dotfiles/tree/master/PrepareOs'> click here </a>
 2) Run `source .zshrc`
