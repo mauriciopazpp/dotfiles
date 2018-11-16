@@ -192,7 +192,8 @@ else
 				sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 				curl -L git.io/antigen > antigen.zsh
 				source antigen.zsh
-
+					
+				echo "Installing autosugestions to zsh"
 				git --version 2>&1 >/dev/null
 				GIT_IS_AVAILABLE=$?
 				if [ $GIT_IS_AVAILABLE -eq 0 ];
@@ -201,7 +202,7 @@ else
 					 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 				fi
 				;;
-
+				
 			20)
 				#xclip
 				echo "Installing xclip"
