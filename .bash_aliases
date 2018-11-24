@@ -16,8 +16,11 @@ alias my-external-ip='curl ipinfo.io/ip' #Returns your external IP address
 alias path='echo -e ${PATH//:/\\n}' #Show all the paths configurated
 alias ports='netstat -tulanp' #Show the ports used. Hint: use grep 80 to filter ports
 alias meminfo='free -m -l -t'
+alias install='sudo apt-get install '
 
 ##Developtment
 #Apache
 alias restart-apache='sudo service apache2 restart' #Restart apache
+alias mysqlr='mysql -u root -p'
+alias laravel-fix-permissions='sudo chmod 777 -R ./bootstrap/cache && sudo chmod 777 -R ./storage/ && echo "Done!"'
 alias switch-php='sudo update-alternatives --config php && echo "\n\n" && php -v'
