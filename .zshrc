@@ -11,6 +11,9 @@ antigen bundle soimort/translate-shell
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle marzocchi/zsh-notify
 antigen bundle buonomo/yarn-completion
+antigen bundle emoji
+antigen bundle emoji-cli
+antigen bundle thefuck #need sudo apt install python3-dev python3-pip python3-setuptools && sudo pip3 install thefuck
 
 if [ $(dpkg-query -W -f='${Status}' fonts-powerline 2>/dev/null | grep -c "ok installed") -eq 0 ];
 then
@@ -48,5 +51,7 @@ setopt always_to_end # move cursor to end if word had one match
 zstyle ':completion:*' menu select # select completions with arrow keys
 zstyle ':completion:*' group-name '' # group results by category
 zstyle ':completion:::::' completer _expand _complete _ignored _approximate # enable approximate matches for completion
+
+eval $(thefuck --alias)
 
 DEFAULT_USER=$USER
