@@ -8,3 +8,9 @@ if [ $(dpkg-query -W -f='${Status}' fonts-powerline 2>/dev/null | grep -c "ok in
 then
   sudo apt-get install fonts-powerline
 fi
+if [ ! -f ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ];
+then
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+fi
+source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
