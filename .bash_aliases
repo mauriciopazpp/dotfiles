@@ -6,7 +6,6 @@ alias mv='mv --verbose' #Explains what is being done
 alias mount='mount |column -t' #Make mount command output pretty and human readable format
 alias reboot='sudo /sbin/reboot' #Reboot your PC
 alias poweroff='sudo /sbin/shutdown' #Terminates all process and shuts down the cpu
-alias desligar='sudo /sbin/shutdown' #Terminates all process and shuts down the cpu
 
 #Util
 alias create-password='openssl rand -base64 20' #Create a password with 20 characters
@@ -19,8 +18,4 @@ alias meminfo='free -m -l -t'
 alias install='sudo apt-get install '
 
 ##Developtment
-#Apache
-alias restart-apache='sudo service apache2 restart' #Restart apache
-alias mysqlr='mysql -u root -p'
-alias laravel-fix-permissions='sudo chmod 777 -R ./bootstrap/cache && sudo chmod 777 -R ./storage/ && echo "Done!"'
 alias switch-php='sudo update-alternatives --config php && echo "\n\n" && php -v'
